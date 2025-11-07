@@ -1,0 +1,65 @@
+ body{
+      margin: 0;
+      background-color: hsl(275, 100%, 97%);
+    }
+    main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .cover{
+      background-color: hsl(292, 42%, 14%);
+      width: 100%;
+    }
+    .section_two{
+      width: 40%;
+      position: relative;
+      z-index: 1;
+      bottom: 100px;
+      border-radius: 10px;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 1px 1px 15px 1px hsl(292, 16%, 49%);
+    }
+    p{
+      position: relative;
+      bottom: 30px;
+      margin-left: 20px;
+      display: none;
+      animation-name: example;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      transform: translateY(10px);
+    }
+    h1{
+      display: flex;
+      align-items: center;
+    }
+    h1 svg{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    hr{
+      opacity: 0.3;
+    }
+    h5{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 20px;
+    } 
+    h5:hover{
+      color: hsl(292, 84%, 49%);
+      cursor: pointer;
+    }
+    @keyframes example {
+       0%{
+        transform: translateY(-5px);
+        opacity: 0;
+       }
+    }
+    @media (max-width: 425px) {
+       .section_two{
+        width: 90%;
+       }
+    }
